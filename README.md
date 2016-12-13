@@ -31,6 +31,6 @@ This program outputs a text file containing information detailing the formant va
 ## ConcatenateText
 Takes a directory containing multiple output text files corresponding to one speaker from FAVE extract (Basedirectory) and concatenates them so that each speaker has one text file detailing formant information.  The program also saves these fiiles to a given output directory (outputdirectory).
 
-## VowelAverage
+## vowelaverage
 
-Takes a train directory containing concatenated text files for each speaker in every region  , and a test directory containing the concatenated text file for one speaker from a given region and trains a KNN classifier with the data from the train directory and outputs the regional dialect label predicted by the KNN classifier for the given test speaker and also prints the accuracy of the KNN for the given test/train data set.  
+In line 254, VowelAverageKnn takes a train directory containing concatenated text files for each speaker in every region (Directory)  , and a test directory containing the concatenated text file for one speaker from a given region (TestDirectory) and a vowel for the KNN classifier to predict a label for (desiredvowel).  The variable truevowel allows for VowelAverageKnn to test on all vowels.  This program trains a KNN classifier with the data from the train directory and outputs the regional dialect label predicted by the KNN classifier for the given test speaker and also prints the accuracy of the KNN for the given test/train data set.  
