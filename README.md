@@ -20,8 +20,11 @@ In FAVEAlignLoop, the function FAVEALIGNLOOP takes a directory containing (corre
 
 
 ## FAVEExtractLoop 
-Takes a directory containing speaker WAV files and their corresponding aligned TextGrid files (inputdirectory).  This program must then be run on the command line with the directory for FAVE extract set as the working directory in the format 
-(python FAVEExtractloop.py) 
+Takes a directory containing speaker WAV files and their corresponding aligned TextGrid files (inputdirectory).  This program must then be run on the command line with the directory for FAVE extract set as the working directory.
+
+In the directory 'FAVE-Extract', type:
+
+    python FAVEExtractloop.py
 
 This program outputs a text file containing information detailing the formant values for each vowel uttered by the speaker. 
 
