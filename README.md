@@ -34,3 +34,9 @@ Takes a directory containing multiple output text files corresponding to one spe
 ## vowelaverage
 
 In line 254, VowelAverageKnn takes a train directory containing concatenated text files for each speaker in every region (Directory)  , and a test directory containing the concatenated text file for one speaker from a given region (TestDirectory) and a vowel for the KNN classifier to predict a label for (desiredvowel).  The variable truevowel allows for VowelAverageKnn to test on all vowels.  This program trains a KNN classifier with the data from the train directory and outputs the regional dialect label predicted by the KNN classifier for the given test speaker and also prints the accuracy of the KNN for the given test/train data set.  
+
+## Writeup
+Writeup is our final writeup for the project.
+
+## Roles
+Discusses our roles for the project.
