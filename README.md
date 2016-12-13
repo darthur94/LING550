@@ -8,9 +8,14 @@ This program aims to predict the regional dialect of a given speaker from a give
 To run these programs effectively, you will need to have **[FAVE Align](https://github.com/JoFrhwld/FAVE/tree/master/FAVE-align)** and **[FAVE Extract](https://github.com/JoFrhwld/FAVE/tree/master/FAVE-extract)** successfully installed. 
 
 # Usage
-TextEdit takes a directory containing TIMIT speaker text files, and formats them so that they are able to be processed by FAVE align and FAVE extract.
+## TextEdit
 
-FAVEAlignLoop takes a directory containing (correctly formatted) speaker text files and their corresponding WAV files and loops them through FAVEAlign, creating an output TextGrid for each .TXT, .WAV file pair. 
+takes a directory containing TIMIT speaker text files at (AddTextDirectory(inputdirectory)), and formats them so that they are able to be processed by FAVE align and FAVE extract.  At line 52, the function addTxt is called, which asks for two strings and a text file.  The two strings will be two tab delimited labels at the begininning of the text file.   
+
+## FAVEAlignLoop
+
+In FAVEAlignLoop, the function FAVEALIGNLOOP takes a directory containing (correctly formatted) speaker text files and their corresponding WAV files (inputdirectory) and the working directory of FAVE Alin (workingdirectory) and loops the files through FAVEAlign, creating an output TextGrid for each .TXT, .WAV file pair. 
+
 
 FAVEExtractLoop takes a directory containing speaker WAV files and their corresponding aligned TextGrid files and outputs a text file containing information detailing the formant values for each vowel uttered by the speaker. 
 
