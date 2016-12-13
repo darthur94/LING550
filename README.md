@@ -40,3 +40,10 @@ Writeup is our final writeup for the project.
 
 ## Roles
 Discusses our roles for the project.
+
+
+## TestDirectory.zip and TrainDirectory.zip
+These were used in vowelaverage.py to train the KNN classifier and to test the KNN classifier.  
+
+## TIMIT Example Files
+These are files that can be used to test TextEdit.py, FAVEAlignLoop.py, FAVEExtractLoop.py, and ConcatenateText.py.
