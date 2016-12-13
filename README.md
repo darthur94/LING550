@@ -29,6 +29,8 @@ In the directory 'FAVE-Extract', type:
 This program outputs a text file containing information detailing the formant values for each vowel uttered by the speaker. 
 
 ## ConcatenateText
-takes a directory containing multiple output text files corresponding to one speaker from FAVE extract and concatenates them so that each speaker has one text file detailing formant information.
+Takes a directory containing multiple output text files corresponding to one speaker from FAVE extract (Basedirectory) and concatenates them so that each speaker has one text file detailing formant information.  The program also saves these fiiles to a given output directory (outputdirectory).
 
-VowelAverage takes a train directory containing concatenated text files for each speaker in every region  , and a test directory containing the concatenated text file for one speaker from a given region and trains a KNN classifier with the data from the train directory and outputs the regional dialect label predicted by the KNN classifier for the given test speaker and also prints the accuracy of the KNN for the given test/train data set.  
+## VowelAverage
+
+Takes a train directory containing concatenated text files for each speaker in every region  , and a test directory containing the concatenated text file for one speaker from a given region and trains a KNN classifier with the data from the train directory and outputs the regional dialect label predicted by the KNN classifier for the given test speaker and also prints the accuracy of the KNN for the given test/train data set.  
